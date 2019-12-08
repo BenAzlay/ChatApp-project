@@ -1,0 +1,10 @@
+C:\Users\benja\OneDrive\Documents\Etudes\M1\C#\Project\ChatApp\ClientChatApp\bin\Debug\ClientChatApp.exe.config
+C:\Users\benja\OneDrive\Documents\Etudes\M1\C#\Project\ChatApp\ClientChatApp\bin\Debug\ClientChatApp.exe
+C:\Users\benja\OneDrive\Documents\Etudes\M1\C#\Project\ChatApp\ClientChatApp\bin\Debug\ClientChatApp.pdb
+C:\Users\benja\OneDrive\Documents\Etudes\M1\C#\Project\ChatApp\ClientChatApp\bin\Debug\Communication.dll
+C:\Users\benja\OneDrive\Documents\Etudes\M1\C#\Project\ChatApp\ClientChatApp\bin\Debug\Communication.pdb
+C:\Users\benja\OneDrive\Documents\Etudes\M1\C#\Project\ChatApp\ClientChatApp\bin\Debug\Communication.dll.config
+C:\Users\benja\OneDrive\Documents\Etudes\M1\C#\Project\ChatApp\ClientChatApp\obj\Debug\ClientChatApp.csprojAssemblyReference.cache
+C:\Users\benja\OneDrive\Documents\Etudes\M1\C#\Project\ChatApp\ClientChatApp\obj\Debug\ClientChatApp.csproj.CopyComplete
+C:\Users\benja\OneDrive\Documents\Etudes\M1\C#\Project\ChatApp\ClientChatApp\obj\Debug\ClientChatApp.exe
+C:\Users\benja\OneDrive\Documents\Etudes\M1\C#\Project\ChatApp\ClientChatApp\obj\Debug\ClientChatApp.pdb

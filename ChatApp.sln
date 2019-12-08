@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29318.209
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DistantChatApp", "DistantChatApp\DistantChatApp.csproj", "{C54BBA52-B467-474B-B64D-6E11B5FAC0E0}"
+	ProjectSection(ProjectDependencies) = postProject
+		{7F34F928-1B4A-4179-9A90-CE897B74962C} = {7F34F928-1B4A-4179-9A90-CE897B74962C}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Communication", "Communication\Communication.csproj", "{7F34F928-1B4A-4179-9A90-CE897B74962C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientGUI", "WindowsFormsApp1\ClientGUI.csproj", "{458F968A-40E3-4EFB-AE01-5B8CC2879197}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C54BBA52-B467-474B-B64D-6E11B5FAC0E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C54BBA52-B467-474B-B64D-6E11B5FAC0E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C54BBA52-B467-474B-B64D-6E11B5FAC0E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C54BBA52-B467-474B-B64D-6E11B5FAC0E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F34F928-1B4A-4179-9A90-CE897B74962C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F34F928-1B4A-4179-9A90-CE897B74962C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F34F928-1B4A-4179-9A90-CE897B74962C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F34F928-1B4A-4179-9A90-CE897B74962C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{458F968A-40E3-4EFB-AE01-5B8CC2879197}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{458F968A-40E3-4EFB-AE01-5B8CC2879197}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{458F968A-40E3-4EFB-AE01-5B8CC2879197}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{458F968A-40E3-4EFB-AE01-5B8CC2879197}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9DB23302-E4CF-4B4A-A8DA-EB2B3235D07C}
+	EndGlobalSection
+EndGlobal

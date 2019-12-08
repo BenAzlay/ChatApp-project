@@ -1,0 +1,2 @@
+C:\Users\benja\OneDrive\Documents\Etudes\M1\C#\Project\ChatApp\WindowsFormsApp1\bin\Debug\ClientGUI.exe
+C:\Users\benja\OneDrive\Documents\Etudes\M1\C#\Project\ChatApp\WindowsFormsApp1\bin\Debug\Communication.dll
