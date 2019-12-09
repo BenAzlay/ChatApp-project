@@ -1,0 +1,14 @@
+C:\Users\benja\OneDrive\Documents\Etudes\M1\C#\Project\ChatApp\DistantChatApp\bin\Debug\DistantChatApp.exe.config
+C:\Users\benja\OneDrive\Documents\Etudes\M1\C#\Project\ChatApp\DistantChatApp\bin\Debug\DistantChatApp.exe.manifest
+C:\Users\benja\OneDrive\Documents\Etudes\M1\C#\Project\ChatApp\DistantChatApp\bin\Debug\DistantChatApp.application
+C:\Users\benja\OneDrive\Documents\Etudes\M1\C#\Project\ChatApp\DistantChatApp\bin\Debug\DistantChatApp.exe
+C:\Users\benja\OneDrive\Documents\Etudes\M1\C#\Project\ChatApp\DistantChatApp\bin\Debug\DistantChatApp.pdb
+C:\Users\benja\OneDrive\Documents\Etudes\M1\C#\Project\ChatApp\DistantChatApp\bin\Debug\Communication.dll
+C:\Users\benja\OneDrive\Documents\Etudes\M1\C#\Project\ChatApp\DistantChatApp\bin\Debug\Communication.pdb
+C:\Users\benja\OneDrive\Documents\Etudes\M1\C#\Project\ChatApp\DistantChatApp\bin\Debug\Communication.dll.config
+C:\Users\benja\OneDrive\Documents\Etudes\M1\C#\Project\ChatApp\DistantChatApp\obj\Debug\DistantChatApp.csprojAssemblyReference.cache
+C:\Users\benja\OneDrive\Documents\Etudes\M1\C#\Project\ChatApp\DistantChatApp\obj\Debug\DistantChatApp.exe.manifest
+C:\Users\benja\OneDrive\Documents\Etudes\M1\C#\Project\ChatApp\DistantChatApp\obj\Debug\DistantChatApp.application
+C:\Users\benja\OneDrive\Documents\Etudes\M1\C#\Project\ChatApp\DistantChatApp\obj\Debug\DistantChatApp.csproj.CopyComplete
+C:\Users\benja\OneDrive\Documents\Etudes\M1\C#\Project\ChatApp\DistantChatApp\obj\Debug\DistantChatApp.exe
+C:\Users\benja\OneDrive\Documents\Etudes\M1\C#\Project\ChatApp\DistantChatApp\obj\Debug\DistantChatApp.pdb

@@ -79,6 +79,7 @@
             this.chatTextBox.Location = new System.Drawing.Point(416, 83);
             this.chatTextBox.Multiline = true;
             this.chatTextBox.Name = "chatTextBox";
+            this.chatTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.chatTextBox.Size = new System.Drawing.Size(240, 141);
             this.chatTextBox.TabIndex = 8;
             // 

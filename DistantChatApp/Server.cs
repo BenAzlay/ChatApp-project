@@ -117,7 +117,7 @@ namespace DistantChatApp
                             {
                                 topic.Content += newText.ToString() + "\r\n";
                                 Console.WriteLine("Text successfully added to topic " + topic.Name);
-                                Net.sendMsg(comm.GetStream(), topic);
+                                //Net.sendMsg(comm.GetStream(), topic);
                             }
                             
                         } 

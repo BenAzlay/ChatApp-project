@@ -17,7 +17,7 @@ namespace ClientGUI
     {
         
         private TcpClient comm;
-        
+        private static Mutex requestMutex = new Mutex();
 
         public Form1(string h, int p)
         {
@@ -35,13 +35,29 @@ namespace ClientGUI
             {
                 if (Program.gotTopic) //Sinon on ne peut pas demander de topic
                 {
+                    //requestMutex.WaitOne();
+                    Thread.Sleep(1000);
                     Net.sendMsg(comm.GetStream(), new Request("fetchTopic", Program.currentTopic.Name)); //On demande le contenu du topic
                     chatTextBox.Text = ((Topic)Net.rcvMsg(comm.GetStream())).Content; //On place le contenu dans la TextBox dediee
+                    //requestMutex.ReleaseMutex();
                 }
             }
 
         }
-       
+
+        private void send_Click(object sender, EventArgs e)
+        {
+            if (Program.connected && Program.gotTopic && newMessageTextBox.Text != "")
+            {
+                //requestMutex.WaitOne();
+                Net.sendMsg(comm.GetStream(), new Text(Program.currentUser, newMessageTextBox.Text, Program.currentTopic.Name));
+                //requestMutex.ReleaseMutex();
+                //chatTextBox.Text = ((Topic)Net.rcvMsg(comm.GetStream())).Content;
+                newMessageTextBox.Text = "";
+
+            }
+        }
+
         private void sendOperation(object sender, EventArgs e)
         {
         }
@@ -65,15 +81,7 @@ namespace ClientGUI
 
             topicLabel.Text = Program.currentTopic.ToString();
         }
-        private void send_Click(object sender, EventArgs e)
-        {
-            if (Program.connected && Program.gotTopic && newMessageTextBox.Text != "")
-            {
-                Net.sendMsg(comm.GetStream(), new Text(Program.currentUser, newMessageTextBox.Text, Program.currentTopic.Name));
-                chatTextBox.Text = ((Topic)Net.rcvMsg(comm.GetStream())).Content;
-                newMessageTextBox.Text = "";
-            }
-        }
+
 
     }
 }

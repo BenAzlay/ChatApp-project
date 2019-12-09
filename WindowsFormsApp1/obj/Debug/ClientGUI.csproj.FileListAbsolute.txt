@@ -1,2 +1,15 @@
 C:\Users\benja\OneDrive\Documents\Etudes\M1\C#\Project\ChatApp\WindowsFormsApp1\bin\Debug\ClientGUI.exe
 C:\Users\benja\OneDrive\Documents\Etudes\M1\C#\Project\ChatApp\WindowsFormsApp1\bin\Debug\Communication.dll
+C:\Users\benja\OneDrive\Documents\Etudes\M1\C#\Project\ChatApp\WindowsFormsApp1\bin\Debug\Communication.pdb
+C:\Users\benja\OneDrive\Documents\Etudes\M1\C#\Project\ChatApp\WindowsFormsApp1\bin\Debug\Communication.dll.config
+C:\Users\benja\OneDrive\Documents\Etudes\M1\C#\Project\ChatApp\WindowsFormsApp1\obj\Debug\ClientGUI.csprojAssemblyReference.cache
+C:\Users\benja\OneDrive\Documents\Etudes\M1\C#\Project\ChatApp\WindowsFormsApp1\obj\Debug\ClientGUI.Form1.resources
+C:\Users\benja\OneDrive\Documents\Etudes\M1\C#\Project\ChatApp\WindowsFormsApp1\obj\Debug\ClientGUI.TopicForm.resources
+C:\Users\benja\OneDrive\Documents\Etudes\M1\C#\Project\ChatApp\WindowsFormsApp1\obj\Debug\ClientGUI.Properties.Resources.resources
+C:\Users\benja\OneDrive\Documents\Etudes\M1\C#\Project\ChatApp\WindowsFormsApp1\obj\Debug\ClientGUI.SignUpForm.resources
+C:\Users\benja\OneDrive\Documents\Etudes\M1\C#\Project\ChatApp\WindowsFormsApp1\obj\Debug\ClientGUI.csproj.GenerateResource.cache
+C:\Users\benja\OneDrive\Documents\Etudes\M1\C#\Project\ChatApp\WindowsFormsApp1\obj\Debug\ClientGUI.exe
+C:\Users\benja\OneDrive\Documents\Etudes\M1\C#\Project\ChatApp\WindowsFormsApp1\obj\Debug\ClientGUI.pdb
+C:\Users\benja\OneDrive\Documents\Etudes\M1\C#\Project\ChatApp\WindowsFormsApp1\bin\Debug\ClientGUI.exe.config
+C:\Users\benja\OneDrive\Documents\Etudes\M1\C#\Project\ChatApp\WindowsFormsApp1\bin\Debug\ClientGUI.pdb
+C:\Users\benja\OneDrive\Documents\Etudes\M1\C#\Project\ChatApp\WindowsFormsApp1\obj\Debug\ClientGUI.csproj.CopyComplete
