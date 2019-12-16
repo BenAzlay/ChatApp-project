@@ -17,16 +17,23 @@ namespace Communication
     [Serializable]
     public class Request : Message
     {
-        private string type, name;
+        private string type, name, pwd;
         public Request(string type)
         {
             this.type = type;
         }
 
-        public Request(string type, string name)
+        public Request(string type, string name) //For topics
         {
             this.type = type;
             this.name = name;
+        }
+
+        public Request(string type, string name, string pwd) //For Sign In
+        {
+            this.type = type;
+            this.name = name;
+            this.pwd = pwd;
         }
 
         public string Type
@@ -37,10 +44,34 @@ namespace Communication
         {
             get { return name; }
         }
+        public string Pwd
+        {
+            get { return pwd; }
+        }
 
         public override string ToString()
         {
             return type;
+        }
+    }
+
+    [Serializable]
+    public class Error : Message
+    {
+        private string message;
+        public Error(string message)
+        {
+            this.message = message;
+        }
+
+        public string Message
+        {
+            get { return message; }
+        }
+
+        public override string ToString()
+        {
+            return message;
         }
     }
 
@@ -106,6 +137,12 @@ namespace Communication
         {
             this.name = name;
             this.content = content;
+        }
+
+        public Topic(string name)
+        {
+            this.name = name;
+            this.content = "";
         }
 
         public string Name

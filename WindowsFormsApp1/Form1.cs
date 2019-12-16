@@ -27,6 +27,7 @@ namespace ClientGUI
             comm = new TcpClient(h, p);
 
             new Thread(this.fetchTopic).Start();
+            new Thread(this.listTopics).Start();
         }
 
         private void fetchTopic()
@@ -35,14 +36,24 @@ namespace ClientGUI
             {
                 if (Program.gotTopic) //Sinon on ne peut pas demander de topic
                 {
-                    //requestMutex.WaitOne();
+                    requestMutex.WaitOne();
                     Thread.Sleep(1000);
                     Net.sendMsg(comm.GetStream(), new Request("fetchTopic", Program.currentTopic.Name)); //On demande le contenu du topic
                     chatTextBox.Text = ((Topic)Net.rcvMsg(comm.GetStream())).Content; //On place le contenu dans la TextBox dediee
-                    //requestMutex.ReleaseMutex();
+                    requestMutex.ReleaseMutex();
                 }
             }
-
+        }
+        private void listTopics() //Pour afficher la liste des topics
+        {
+            while (true)
+            {
+                requestMutex.WaitOne();
+                Thread.Sleep(1000);
+                Net.sendMsg(comm.GetStream(), new Request("listTopics")); //On demande le contenu du topic
+                listTopicsTextBox.Text = "List of topics" + ((Request)Net.rcvMsg(comm.GetStream())).ToString(); //On place le contenu dans la TextBox dediee
+                requestMutex.ReleaseMutex();
+            }
         }
 
         private void send_Click(object sender, EventArgs e)
@@ -72,6 +83,13 @@ namespace ClientGUI
             SignUpForm signUpForm = new SignUpForm("127.0.0.1", 8976);
             signUpForm.ShowDialog();
             
+            connectionLabel.Text = Program.currentUser.ToString();
+        }
+        private void signIn_Click(object sender, EventArgs e)
+        {
+            SignInForm signInForm = new SignInForm("127.0.0.1", 8976);
+            signInForm.ShowDialog();
+
             connectionLabel.Text = Program.currentUser.ToString();
         }
         private void newTopic_Click(object sender, EventArgs e)

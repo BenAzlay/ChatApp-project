@@ -35,6 +35,8 @@
             this.chatTextBox = new System.Windows.Forms.TextBox();
             this.newTopicButton = new System.Windows.Forms.Button();
             this.topicLabel = new System.Windows.Forms.Label();
+            this.signInButton = new System.Windows.Forms.Button();
+            this.listTopicsTextBox = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // SignUpButton
@@ -50,7 +52,7 @@
             // connectionLabel
             // 
             this.connectionLabel.AutoSize = true;
-            this.connectionLabel.Location = new System.Drawing.Point(12, 155);
+            this.connectionLabel.Location = new System.Drawing.Point(240, 16);
             this.connectionLabel.Name = "connectionLabel";
             this.connectionLabel.Size = new System.Drawing.Size(113, 20);
             this.connectionLabel.TabIndex = 4;
@@ -87,26 +89,47 @@
             // 
             this.newTopicButton.Location = new System.Drawing.Point(16, 83);
             this.newTopicButton.Name = "newTopicButton";
-            this.newTopicButton.Size = new System.Drawing.Size(109, 47);
+            this.newTopicButton.Size = new System.Drawing.Size(141, 47);
             this.newTopicButton.TabIndex = 9;
-            this.newTopicButton.Text = "Create topic";
+            this.newTopicButton.Text = "Create/join topic";
             this.newTopicButton.UseVisualStyleBackColor = true;
             this.newTopicButton.Click += new System.EventHandler(this.newTopic_Click);
             // 
             // topicLabel
             // 
             this.topicLabel.AutoSize = true;
-            this.topicLabel.Location = new System.Drawing.Point(12, 204);
+            this.topicLabel.Location = new System.Drawing.Point(240, 83);
             this.topicLabel.Name = "topicLabel";
             this.topicLabel.Size = new System.Drawing.Size(131, 20);
             this.topicLabel.TabIndex = 10;
             this.topicLabel.Text = "No topic selected";
+            // 
+            // signInButton
+            // 
+            this.signInButton.Location = new System.Drawing.Point(123, 16);
+            this.signInButton.Name = "signInButton";
+            this.signInButton.Size = new System.Drawing.Size(88, 47);
+            this.signInButton.TabIndex = 11;
+            this.signInButton.Text = "Sign In";
+            this.signInButton.UseVisualStyleBackColor = true;
+            this.signInButton.Click += new System.EventHandler(this.signIn_Click);
+            // 
+            // listTopicsTextBox
+            // 
+            this.listTopicsTextBox.AutoSize = true;
+            this.listTopicsTextBox.Location = new System.Drawing.Point(29, 164);
+            this.listTopicsTextBox.Name = "listTopicsTextBox";
+            this.listTopicsTextBox.Size = new System.Drawing.Size(102, 20);
+            this.listTopicsTextBox.TabIndex = 12;
+            this.listTopicsTextBox.Text = "List of topics:";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(769, 329);
+            this.Controls.Add(this.listTopicsTextBox);
+            this.Controls.Add(this.signInButton);
             this.Controls.Add(this.topicLabel);
             this.Controls.Add(this.newTopicButton);
             this.Controls.Add(this.chatTextBox);
@@ -130,6 +153,8 @@
         private System.Windows.Forms.TextBox chatTextBox;
         private System.Windows.Forms.Button newTopicButton;
         private System.Windows.Forms.Label topicLabel;
+        private System.Windows.Forms.Button signInButton;
+        private System.Windows.Forms.Label listTopicsTextBox;
     }
 }
 

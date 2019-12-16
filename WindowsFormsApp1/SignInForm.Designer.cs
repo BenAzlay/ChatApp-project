@@ -2,7 +2,7 @@
 
 namespace ClientGUI
 {
-    partial class SignUpForm
+    partial class SignInForm
     {
         /// <summary>
         /// Required designer variable.
@@ -31,78 +31,79 @@ namespace ClientGUI
         private void InitializeComponent()
         {
             this.usernameTextBox = new System.Windows.Forms.TextBox();
-            this.usernameLabel = new System.Windows.Forms.Label();
-            this.passwordLabel = new System.Windows.Forms.Label();
             this.passwordTextBox = new System.Windows.Forms.TextBox();
-            this.submitButton = new System.Windows.Forms.Button();
+            this.UsernameLabel = new System.Windows.Forms.Label();
+            this.passwordLabel = new System.Windows.Forms.Label();
             this.errorLabel = new System.Windows.Forms.Label();
+            this.submitButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // usernameTextBox
             // 
-            this.usernameTextBox.Location = new System.Drawing.Point(133, 20);
+            this.usernameTextBox.Location = new System.Drawing.Point(109, 30);
             this.usernameTextBox.Name = "usernameTextBox";
-            this.usernameTextBox.Size = new System.Drawing.Size(172, 26);
+            this.usernameTextBox.Size = new System.Drawing.Size(174, 26);
             this.usernameTextBox.TabIndex = 0;
-            this.usernameTextBox.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // usernameLabel
+            // passwordTextBox
             // 
-            this.usernameLabel.AutoSize = true;
-            this.usernameLabel.Location = new System.Drawing.Point(23, 23);
-            this.usernameLabel.Name = "usernameLabel";
-            this.usernameLabel.Size = new System.Drawing.Size(83, 20);
-            this.usernameLabel.TabIndex = 1;
-            this.usernameLabel.Text = "Username";
-            this.usernameLabel.Click += new System.EventHandler(this.label1_Click);
+            this.passwordTextBox.Location = new System.Drawing.Point(109, 72);
+            this.passwordTextBox.Name = "passwordTextBox";
+            this.passwordTextBox.Size = new System.Drawing.Size(174, 26);
+            this.passwordTextBox.TabIndex = 1;
+            this.passwordTextBox.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            // 
+            // UsernameLabel
+            // 
+            this.UsernameLabel.AutoSize = true;
+            this.UsernameLabel.Location = new System.Drawing.Point(19, 36);
+            this.UsernameLabel.Name = "UsernameLabel";
+            this.UsernameLabel.Size = new System.Drawing.Size(83, 20);
+            this.UsernameLabel.TabIndex = 2;
+            this.UsernameLabel.Text = "Username";
+            this.UsernameLabel.Click += new System.EventHandler(this.label1_Click);
             // 
             // passwordLabel
             // 
             this.passwordLabel.AutoSize = true;
-            this.passwordLabel.Location = new System.Drawing.Point(23, 71);
+            this.passwordLabel.Location = new System.Drawing.Point(19, 76);
             this.passwordLabel.Name = "passwordLabel";
             this.passwordLabel.Size = new System.Drawing.Size(78, 20);
             this.passwordLabel.TabIndex = 3;
             this.passwordLabel.Text = "Password";
-            // 
-            // passwordTextBox
-            // 
-            this.passwordTextBox.Location = new System.Drawing.Point(133, 68);
-            this.passwordTextBox.Name = "passwordTextBox";
-            this.passwordTextBox.Size = new System.Drawing.Size(172, 26);
-            this.passwordTextBox.TabIndex = 2;
-            this.passwordTextBox.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
-            // 
-            // submitButton
-            // 
-            this.submitButton.Location = new System.Drawing.Point(110, 135);
-            this.submitButton.Name = "submitButton";
-            this.submitButton.Size = new System.Drawing.Size(81, 42);
-            this.submitButton.TabIndex = 4;
-            this.submitButton.Text = "Submit";
-            this.submitButton.UseVisualStyleBackColor = true;
-            this.submitButton.Click += new System.EventHandler(this.button1_Click);
+            this.passwordLabel.Click += new System.EventHandler(this.label2_Click);
             // 
             // errorLabel
             // 
             this.errorLabel.AutoSize = true;
-            this.errorLabel.Location = new System.Drawing.Point(23, 106);
+            this.errorLabel.Location = new System.Drawing.Point(35, 108);
             this.errorLabel.Name = "errorLabel";
             this.errorLabel.Size = new System.Drawing.Size(0, 20);
-            this.errorLabel.TabIndex = 5;
+            this.errorLabel.TabIndex = 4;
+            this.errorLabel.Click += new System.EventHandler(this.label3_Click);
             // 
-            // SignUpForm
+            // submitButton
+            // 
+            this.submitButton.Location = new System.Drawing.Point(123, 136);
+            this.submitButton.Name = "submitButton";
+            this.submitButton.Size = new System.Drawing.Size(95, 45);
+            this.submitButton.TabIndex = 5;
+            this.submitButton.Text = "Sign In";
+            this.submitButton.UseVisualStyleBackColor = true;
+            this.submitButton.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // SignInForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(335, 198);
-            this.Controls.Add(this.errorLabel);
+            this.ClientSize = new System.Drawing.Size(349, 238);
             this.Controls.Add(this.submitButton);
+            this.Controls.Add(this.errorLabel);
             this.Controls.Add(this.passwordLabel);
+            this.Controls.Add(this.UsernameLabel);
             this.Controls.Add(this.passwordTextBox);
-            this.Controls.Add(this.usernameLabel);
             this.Controls.Add(this.usernameTextBox);
-            this.Name = "SignUpForm";
+            this.Name = "SignInForm";
             this.Text = "SignInForm";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -112,10 +113,10 @@ namespace ClientGUI
         #endregion
 
         private System.Windows.Forms.TextBox usernameTextBox;
-        private System.Windows.Forms.Label usernameLabel;
-        private System.Windows.Forms.Label passwordLabel;
         private System.Windows.Forms.TextBox passwordTextBox;
-        private System.Windows.Forms.Button submitButton;
+        private System.Windows.Forms.Label UsernameLabel;
+        private System.Windows.Forms.Label passwordLabel;
         private System.Windows.Forms.Label errorLabel;
+        private System.Windows.Forms.Button submitButton;
     }
 }

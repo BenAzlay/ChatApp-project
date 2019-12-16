@@ -33,7 +33,7 @@ namespace ClientGUI
         {
             if(label1.Text != "")
             {
-                Net.sendMsg(comm.GetStream(), new Topic(nameTextBox.Text, ""));
+                Net.sendMsg(comm.GetStream(), new Request("launchTopic", nameTextBox.Text));
                 Program.currentTopic = (Topic)Net.rcvMsg(comm.GetStream());
                 Program.gotTopic = true;
                 this.Close();
