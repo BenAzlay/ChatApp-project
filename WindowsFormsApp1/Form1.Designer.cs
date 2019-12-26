@@ -37,6 +37,7 @@
             this.topicLabel = new System.Windows.Forms.Label();
             this.signInButton = new System.Windows.Forms.Button();
             this.listTopicsTextBox = new System.Windows.Forms.Label();
+            this.privateTextsButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // SignUpButton
@@ -123,11 +124,22 @@
             this.listTopicsTextBox.TabIndex = 12;
             this.listTopicsTextBox.Text = "List of topics:";
             // 
+            // privateTextsButton
+            // 
+            this.privateTextsButton.Location = new System.Drawing.Point(416, 243);
+            this.privateTextsButton.Name = "privateTextsButton";
+            this.privateTextsButton.Size = new System.Drawing.Size(158, 36);
+            this.privateTextsButton.TabIndex = 13;
+            this.privateTextsButton.Text = "Private messages";
+            this.privateTextsButton.UseVisualStyleBackColor = true;
+            this.privateTextsButton.Click += new System.EventHandler(this.privateTextsButton_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(769, 329);
+            this.Controls.Add(this.privateTextsButton);
             this.Controls.Add(this.listTopicsTextBox);
             this.Controls.Add(this.signInButton);
             this.Controls.Add(this.topicLabel);
@@ -139,7 +151,7 @@
             this.Controls.Add(this.SignUpButton);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            //this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -155,6 +167,7 @@
         private System.Windows.Forms.Label topicLabel;
         private System.Windows.Forms.Button signInButton;
         private System.Windows.Forms.Label listTopicsTextBox;
+        private System.Windows.Forms.Button privateTextsButton;
     }
 }
 

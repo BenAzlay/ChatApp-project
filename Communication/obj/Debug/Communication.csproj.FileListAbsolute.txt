@@ -3,4 +3,3 @@ C:\Users\benja\OneDrive\Documents\Etudes\M1\C#\Project\ChatApp\Communication\bin
 C:\Users\benja\OneDrive\Documents\Etudes\M1\C#\Project\ChatApp\Communication\bin\Debug\Communication.pdb
 C:\Users\benja\OneDrive\Documents\Etudes\M1\C#\Project\ChatApp\Communication\obj\Debug\Communication.dll
 C:\Users\benja\OneDrive\Documents\Etudes\M1\C#\Project\ChatApp\Communication\obj\Debug\Communication.pdb
-C:\Users\benja\OneDrive\Documents\Etudes\M1\C#\Project\ChatApp\Communication\obj\Debug\Communication.csprojAssemblyReference.cache

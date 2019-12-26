@@ -17,8 +17,6 @@ namespace ClientGUI
     {
         
         private TcpClient comm;
-        private static Mutex requestMutex = new Mutex();
-
         public Form1(string h, int p)
         {
             InitializeComponent();
@@ -26,33 +24,33 @@ namespace ClientGUI
             // connect to server
             comm = new TcpClient(h, p);
 
-            new Thread(this.fetchTopic).Start();
             new Thread(this.listTopics).Start();
+            new Thread(this.fetchTopic).Start();
         }
 
-        private void fetchTopic()
+        private void fetchTopic()//Fetch le contenu du topic selectionne
         {
             while (true)
             {
+                Thread.Sleep(1000);
+                
                 if (Program.gotTopic) //Sinon on ne peut pas demander de topic
                 {
-                    requestMutex.WaitOne();
-                    Thread.Sleep(1000);
-                    Net.sendMsg(comm.GetStream(), new Request("fetchTopic", Program.currentTopic.Name)); //On demande le contenu du topic
-                    chatTextBox.Text = ((Topic)Net.rcvMsg(comm.GetStream())).Content; //On place le contenu dans la TextBox dediee
-                    requestMutex.ReleaseMutex();
+                     Net.sendMsg(comm.GetStream(), new Request("fetchTopic", Program.currentTopic.Name)); //On demande le contenu du topic
+                     chatTextBox.Text = ((Topic)Net.rcvMsg(comm.GetStream())).Content; //On place le contenu dans la TextBox dediee
                 }
+                
             }
         }
-        private void listTopics() //Pour afficher la liste des topics
+
+        private void listTopics() //Fetch la liste des topics
         {
             while (true)
             {
-                requestMutex.WaitOne();
                 Thread.Sleep(1000);
-                Net.sendMsg(comm.GetStream(), new Request("listTopics")); //On demande le contenu du topic
-                listTopicsTextBox.Text = "List of topics" + ((Request)Net.rcvMsg(comm.GetStream())).ToString(); //On place le contenu dans la TextBox dediee
-                requestMutex.ReleaseMutex();
+               
+                Net.sendMsg(comm.GetStream(), new Request("listTopics"));
+                listTopicsTextBox.Text = "List of topics" + ((Request)Net.rcvMsg(comm.GetStream())).ToString();
             }
         }
 
@@ -60,22 +58,11 @@ namespace ClientGUI
         {
             if (Program.connected && Program.gotTopic && newMessageTextBox.Text != "")
             {
-                //requestMutex.WaitOne();
                 Net.sendMsg(comm.GetStream(), new Text(Program.currentUser, newMessageTextBox.Text, Program.currentTopic.Name));
-                //requestMutex.ReleaseMutex();
                 //chatTextBox.Text = ((Topic)Net.rcvMsg(comm.GetStream())).Content;
                 newMessageTextBox.Text = "";
 
             }
-        }
-
-        private void sendOperation(object sender, EventArgs e)
-        {
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void signUp_Click(object sender, EventArgs e)
@@ -92,6 +79,15 @@ namespace ClientGUI
 
             connectionLabel.Text = Program.currentUser.ToString();
         }
+        private void privateTextsButton_Click(object sender, EventArgs e)
+        {
+            if (Program.connected)
+            {
+                PrivateTextsForm privateTextsForm = new PrivateTextsForm("127.0.0.1", 8976);
+                privateTextsForm.ShowDialog();
+            }
+            
+        }
         private void newTopic_Click(object sender, EventArgs e)
         {
             TopicForm topicForm = new TopicForm("127.0.0.1", 8976);
@@ -99,7 +95,5 @@ namespace ClientGUI
 
             topicLabel.Text = Program.currentTopic.ToString();
         }
-
-
     }
 }

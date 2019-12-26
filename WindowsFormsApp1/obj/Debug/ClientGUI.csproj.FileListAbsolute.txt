@@ -14,3 +14,4 @@ C:\Users\benja\OneDrive\Documents\Etudes\M1\C#\Project\ChatApp\WindowsFormsApp1\
 C:\Users\benja\OneDrive\Documents\Etudes\M1\C#\Project\ChatApp\WindowsFormsApp1\bin\Debug\ClientGUI.pdb
 C:\Users\benja\OneDrive\Documents\Etudes\M1\C#\Project\ChatApp\WindowsFormsApp1\obj\Debug\ClientGUI.csproj.CopyComplete
 C:\Users\benja\OneDrive\Documents\Etudes\M1\C#\Project\ChatApp\WindowsFormsApp1\obj\Debug\ClientGUI.SignInForm.resources
+C:\Users\benja\OneDrive\Documents\Etudes\M1\C#\Project\ChatApp\WindowsFormsApp1\obj\Debug\ClientGUI.PrivateTextsForm.resources

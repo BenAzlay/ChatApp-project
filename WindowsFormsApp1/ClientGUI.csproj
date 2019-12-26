@@ -52,6 +52,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="PrivateTextsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrivateTextsForm.Designer.cs">
+      <DependentUpon>PrivateTextsForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="SignInForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,6 +80,9 @@
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrivateTextsForm.resx">
+      <DependentUpon>PrivateTextsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SignInForm.resx">
       <DependentUpon>SignInForm.cs</DependentUpon>

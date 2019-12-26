@@ -42,26 +42,26 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Communication.dll" size="6144">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Communication.dll" size="6656">
       <assemblyIdentity name="Communication" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>rFcpSagA69ZH4pfMkLAsgeUk8UvDfBOGY83PiU9FrWw=</dsig:DigestValue>
+        <dsig:DigestValue>GEZPReLwMfRMnHXFx744WYzPdsiYLRqGzu4wNezh1EI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DistantChatApp.exe" size="8672">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DistantChatApp.exe" size="9696">
       <assemblyIdentity name="DistantChatApp" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>lUqkezx4WrFNHHY9FlJ2CTbnUGujcH8ocIeYQJT03wk=</dsig:DigestValue>
+        <dsig:DigestValue>ChDyFPQ9tlfiXCe4p2nQXf544xFNdlMkExYrUzmIKIY=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

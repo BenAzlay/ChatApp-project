@@ -17,36 +17,36 @@ namespace Communication
     [Serializable]
     public class Request : Message
     {
-        private string type, name, pwd;
+        private string type, p1, p2;
         public Request(string type)
         {
             this.type = type;
         }
 
-        public Request(string type, string name) //For topics
+        public Request(string type, string p1) //For topics
         {
             this.type = type;
-            this.name = name;
+            this.p1 = p1;
         }
 
-        public Request(string type, string name, string pwd) //For Sign In
+        public Request(string type, string p1, string p2) //For Sign In
         {
             this.type = type;
-            this.name = name;
-            this.pwd = pwd;
+            this.p1 = p1;
+            this.p2 = p2;
         }
 
         public string Type
         {
             get { return type; }
         }
-        public string Name
+        public string P1
         {
-            get { return name; }
+            get { return p1; }
         }
-        public string Pwd
+        public string P2
         {
-            get { return pwd; }
+            get { return p2; }
         }
 
         public override string ToString()
@@ -126,6 +126,36 @@ namespace Communication
         public override string ToString()
         {
             return sender.Username + ": " + content;
+        }
+    }
+
+    [Serializable]
+    public class PrivateText : Message
+    {
+        private string content;
+        private string sender, receiver; //usernames
+
+        public PrivateText(string sender, string receiver, string content)
+        {
+            this.sender = sender;
+            this.receiver = receiver;
+            this.content = content;
+        }
+        public string Sender
+        {
+            get { return sender; }
+        }
+        public string Receiver
+        {
+            get { return receiver; }
+        }
+        public string Content
+        {
+            get { return content; }
+        }
+        public override string ToString()
+        {
+            return sender + ": " + content;
         }
     }
 
